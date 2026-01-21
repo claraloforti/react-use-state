@@ -1,7 +1,12 @@
-const LanguageBtn = ({ title }) => {
+const LanguageBtn = ({ title, isOpen, onLanguageToggle, description }) => {
     return (
-        <button>{title}</button>
-    )
+        <>
+            <button onClick={onLanguageToggle}>
+                {title}
+            </button>
+            {isOpen && <div>{description}</div>}
+        </>
+    );
 };
 
 export default LanguageBtn

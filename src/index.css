@@ -19,3 +19,8 @@ button {
   padding: 10px;
 
 }
+
+.languages-list {
+  display: flex;
+  list-style: none;
+}

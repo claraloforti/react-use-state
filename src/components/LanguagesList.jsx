@@ -7,14 +7,13 @@ const LanguagesList = () => {
         <>
             <h1>Learn Web Development</h1>
 
-            <div className="languages-list">
+            <ul className="languages-list">
                 {languages.map((language) => (
-                    <LanguageBtn
-                        key={language.id}
-                        title={language.title}
-                    />
+                    <li key={language.id}>
+                        <LanguageBtn title={language.title} />
+                    </li>
                 ))}
-            </div>
+            </ul>
         </>
     )
 };
